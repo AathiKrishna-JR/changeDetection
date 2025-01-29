@@ -15,7 +15,10 @@ export class MessagesListComponent implements OnInit{
   
 
   private messageService = inject(MessagesService);
-  messages$ = this.messageService.messages$
+ 
+  messages = this.messageService.allMessages;
+ 
+  // messages$ = this.messageService.messages$
   // private cdRef = inject(ChangeDetectorRef);
   //private destroyRef = inject(DestroyRef);
   //messages: string[] = []

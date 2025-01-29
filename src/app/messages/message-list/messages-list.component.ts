@@ -1,12 +1,11 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, DestroyRef, OnInit, inject, input } from '@angular/core';
 import { MessagesService } from '../message.service';
 import { Subscription } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
+//import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-messages-list',
   standalone: true,
-  imports : [AsyncPipe],
   templateUrl: './messages-list.component.html',
   styleUrl: './messages-list.component.css',
   changeDetection : ChangeDetectionStrategy.OnPush
